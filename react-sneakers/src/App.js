@@ -4,12 +4,14 @@ function App() {
   return (
       <div className="wrapper">
           <header>
-              <div>
+              <div className="headerLeft">
                   <svg />
-                  <h3>REACT SNEAKERS</h3>
-                  <p>Магазин лучших кросовок</p>
+                  <div className="headerInfo">
+                      <h3>REACT SNEAKERS</h3>
+                      <p>Магазин лучших кросовок</p>
+                  </div>
               </div>
-              <ul>
+              <ul className="headerRight">
                   <li>
                       <svg/>
                       <span>1205 руб.</span>
