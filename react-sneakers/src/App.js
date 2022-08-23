@@ -21,6 +21,10 @@ function App() {
                   </li>
               </ul>
           </header>
+          <div className="content">
+              <h1>Все крсовки</h1>
+              ......
+          </div>
       </div>
   );
 }
