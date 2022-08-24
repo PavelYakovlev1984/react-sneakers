@@ -1,3 +1,4 @@
+import React from "react";
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
       <div className="wrapper">
           <header>
               <div className="headerLeft">
-                  <svg />
+                  <img width={40} height={40} src="/img/logo.svg"/>
                   <div className="headerInfo">
                       <h3>REACT SNEAKERS</h3>
                       <p>Магазин лучших кросовок</p>
@@ -13,11 +14,11 @@ function App() {
               </div>
               <ul className="headerRight">
                   <li>
-                      <svg/>
+                      <img width={40} height={40} src="/img/cart.svg"/>
                       <span>1205 руб.</span>
                   </li>
                   <li>
-                      <svg  />
+                      <img width={40} height={40} src="/img/user.svg"/>
                   </li>
               </ul>
           </header>
