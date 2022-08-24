@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: system-ui;
+  font-family: inter, system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e7f6ff;
@@ -20,11 +20,7 @@ code {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  .headerLeft {
-    display: flex;
-    align-items: center;
+  border-bottom: 1px solid #eaeaea;
     img {
       margin-right: 15px;
     }
@@ -34,5 +30,11 @@ header {
     }
 
   }
+
+.content {
+  h1 {
+    margin: 0;
+  }
 }
+
 
