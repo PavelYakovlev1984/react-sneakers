@@ -32,6 +32,9 @@ function App() {
               </div>
               <div className="sneakers d-flex">
                   <div className="card">
+                      <div className="button">
+                          <img src="img/sneakers/heart-like.svg" alt="heart-unlike"/>
+                      </div>
                       <img width={133} height={112} src="img/sneakers/1.jpg" alt="Sneakers"/>
                       <h5>Мужские Кроссовки Nike Blazer Mid Suede</h5>
                       <div className="d-flex justify-between align-center">
