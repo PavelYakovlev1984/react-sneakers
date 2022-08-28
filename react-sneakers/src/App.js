@@ -5,7 +5,18 @@ function App() {
   return (
       <div className="wrapper clear">
           <div className="overlay">
-              <div className="drawer"></div>
+              <div className="drawer">
+                  <h2 className="mb-30">Корзина</h2>
+                  <div className="cartItem d-flex align-center">
+                      <div className="cartItemImg" style={{
+                          backgroundImage: 'url(img/sneakers/1.jpg)'
+                      }}></div>
+                      <div>
+                          <p className="mb-15">Мужские Кроссовки Nike Air Max 270</p>
+                          <b>12 999 руб.</b>
+                      </div>
+                      <img className="removeBtn" src="img/sneakers/close.svg" alt="Close"/></div>
+              </div>
           </div>
           <header className="d-flex justify-between align-center p-40">
               <div className="d-flex align-center">

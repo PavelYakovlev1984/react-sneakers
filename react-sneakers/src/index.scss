@@ -95,12 +95,47 @@ header {
 .overlay {
   position: absolute;
   left: 0;
-  right: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
 }
 
+.drawer {
+  position: absolute;
+  background-color: #fff;
+  width: 420px;
+  height: 100%;
+  right: 0;
+  z-index: 10;
+  padding: 10px;
+}
+
+.cartItem {
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.cartItemImg {
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-position: 0 -3px;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.removeBtn {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}
 
