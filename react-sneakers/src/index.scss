@@ -112,6 +112,9 @@ header {
   right: 0;
   z-index: 10;
   padding: 10px;
+  .items {
+    overflow: auto;
+  }
 }
 
 .cartItem {
@@ -144,47 +147,55 @@ p {
 .items {
   flex: 1;
 }
+.greenButton {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border: 0;
+  background-color: #9dd458;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: lighten(#9dd458, 10%);
+  }
+  &:active {
+    background-color: darken(#9dd458, 10%);
+  }
+}
 
 .cartTotalBlock {
   li {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
-  }
 
-  div {
-    border-bottom: 1px dashed #dfdfdf;
-    position: relative;
-    top: -4px;
-    margin: 0 7px;
-  }
-
-  button {
-    position: relative;
-    width: 100%;
-    height: 55px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    border: 0;
-    background-color: #9dd458;
-    border-radius: 18px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    &:hover {
-      background-color: lighten(#9dd458, 5%);
+    div {
+      border-bottom: 1px dashed #dfdfdf;
+      position: relative;
+      top: -4px;
+      margin: 0 7px;
+      height: 1px;
     }
-    &:active {
-      background-color: darken(#9dd458, 5%);
+  }
+
+  .greenButton{
+    &:hover {
+      img {
+        transform: translateX(5px);
+      }
     }
 
     img {
       position: absolute;
       right: 30px;
-      transition: translateX 0.3s ease-in-out;
-      &:hover {
-        transform: translateX(5px);
-      }
+      transition: translateX 0.15s ease-in-out;
     }
+
   }
-}
+  }
+
 
