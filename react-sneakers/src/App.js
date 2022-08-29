@@ -5,13 +5,13 @@ import Drawer from "./components/Drawer";
 const arr = [
     {title: 'Мужские Кроссовки Nike Blazer Mid Suede',
         price: 12999,
-        imageUrl: 'img/sneakers/1.jpg'},
+        imageUrl: 'img/sneakers/1.jpg',},
     {title: 'Мужские Кроссовки Nike Air Max 270',
         price: 12999,
-        imageUrl: "public/img/sneakers/2.jpg"},
+        imageUrl: "img/sneakers/2.jpg",},
     {title: 'Мужские Кроссовки Nike Blazer Mid Suede',
         price: 18666,
-        imageUrl: "public/img/sneakers/3.jpg"},
+        imageUrl: "img/sneakers/3.jpg",},
 ];
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
               </div>
               <div className="sneakers d-flex">
 
-                  {arr.map((arr) => <b>hjghjghjghj</b>}
+                  {arr.map((obj) => (<Card title={obj.title} price={obj.price} imageUrl={obj.imageUrl}/>) )}
               </div>
           </div>
       </div>
