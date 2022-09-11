@@ -14,6 +14,7 @@ function Card (props) {
               <div className="d-flex flex-column">
                   <span>Цена:</span>
                   <b>{props.price}</b>
+
               </div>
               <button className="button" onClick={onClickButton}>
                   <img width={11} height={11} src="img/plus.svg" alt="Plus"/>
